@@ -9,18 +9,26 @@ export function LastPlayedWidget() {
   useEffect(() => {
     let cancelled = false;
 
-    fetch("/api/last-played")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((json: LastPlayed | null) => {
-        if (!cancelled) setData(json);
-      })
-      .catch(() => {
-        // No API route (static export), no credentials, or a network error —
-        // all of these should just mean the widget doesn't exist.
-      });
+    const load = () => {
+      fetch("/api/last-played")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json: LastPlayed | null) => {
+          if (!cancelled) setData(json);
+        })
+        .catch(() => {
+          // No API route (static export), no credentials, or a network error —
+          // all of these should just mean the widget doesn't exist.
+        });
+    };
+
+    load();
+    // Matches the route's `revalidate = 180` — no point polling faster
+    // than the cached response can actually change.
+    const id = setInterval(load, 180_000);
 
     return () => {
       cancelled = true;
+      clearInterval(id);
     };
   }, []);
 
