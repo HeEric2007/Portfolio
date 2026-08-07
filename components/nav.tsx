@@ -32,9 +32,9 @@ export function Nav() {
 
   return (
     <nav className="flex justify-center">
-      <ul className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 px-6 py-8 text-center">
+      <ul className="scrollbar-hide flex items-center gap-x-1 overflow-x-auto whitespace-nowrap px-6 py-8 text-center sm:flex-wrap sm:justify-center sm:gap-y-2 sm:overflow-visible sm:whitespace-normal">
         {items.map((item, i) => (
-          <li key={item.href} className="flex items-center">
+          <li key={item.href} className="flex shrink-0 items-center">
             {i > 0 && <span className="mx-2 text-muted select-none">·</span>}
             {item.external ? (
               <a
