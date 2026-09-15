@@ -22,6 +22,6 @@ export const site: SiteConfig = {
   ],
   url: "https://example.com",
   github: "https://github.com/HeEric2007",
-  linkedin: "https://www.linkedin.com/in/ericheumn/",
+  linkedin: "https://www.linkedin.com/in/erichaoranhe/",
   email,
 };
