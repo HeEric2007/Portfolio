@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "Discord bot: email OTP proves @umn.edu ownership, remembers the user, and auto-assigns verified when they join any server running Gopherfy.",
     tags: ["JavaScript", "Discord", "SQLite"],
-    url: "https://github.com/HeEric2007/Gopherfy",
+    url: "https://github.com/ravindu-ranasinghe/Gopherfy",
     year: 2026,
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description:
       "O1 Summit hackathon finalist project: an agentic dispute assistant that helps restaurants fight missing-item chargebacks on delivery platforms.",
     tags: ["TypeScript", "Full Stack"],
-    url: "https://github.com/HeEric2007/Dishpute",
+    url: "https://github.com/Ritpra93/Dishpute",
     year: 2026,
   },
 ];
