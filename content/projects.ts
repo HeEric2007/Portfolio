@@ -17,7 +17,7 @@ export const projects: Project[] = [
     slug: "gopherfy",
     name: "gopherfy",
     description:
-      "Discord bot: email OTP proves @umn.edu ownership, remembers the user, and auto-assigns verified when they join any server running Gopherfy.",
+      "Discord bot: email OTP proves @umn.edu ownership, remembers the user, and auto-assigns verified when they join any server running Gopherfy. Currently supporting 3,500 members.",
     tags: ["JavaScript", "Discord", "SQLite"],
     url: "https://github.com/ravindu-ranasinghe/Gopherfy",
     year: 2026,
