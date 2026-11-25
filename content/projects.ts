@@ -14,6 +14,24 @@ export type Project = {
 // sorts by year descending.
 export const projects: Project[] = [
   {
+    slug: "merit",
+    name: "merit",
+    description:
+      "Paid code review on GitHub: maintainers lock a USDC reward in escrow on Arc testnet before review starts, and reviewers claim it once the maintainer approves that their feedback led to a fix. Built with a team.",
+    tags: ["TypeScript", "Solidity", "Postgres"],
+    url: "https://github.com/ravindu-ranasinghe/merit",
+    year: 2026,
+  },
+  {
+    slug: "gophertranscript",
+    name: "gophertranscript",
+    description:
+      "Bookmarklet that saves UMN lecture transcripts from UNITE and Canvas as text or caption files. On UNITE, it can export a whole course as a single zip.",
+    tags: ["JavaScript", "Bookmarklet"],
+    url: "https://github.com/HeEric2007/GopherTranscript",
+    year: 2026,
+  },
+  {
     slug: "gopherfy",
     name: "gopherfy",
     description:
