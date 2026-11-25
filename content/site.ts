@@ -20,7 +20,7 @@ export const site: SiteConfig = {
     `i'm always open to connecting though, whether you're a recruiter with something interesting, or someone just looking to make a new friend :).`,
     `reach out by email at [${email}](mailto:${email}).`
   ],
-  url: "https://example.com",
+  url: "https://www.eriche.me",
   github: "https://github.com/HeEric2007",
   linkedin: "https://www.linkedin.com/in/erichaoranhe/",
   email,
